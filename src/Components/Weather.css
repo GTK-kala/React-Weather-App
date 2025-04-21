@@ -53,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
+    gap: 14px;
 }
 .weather-data .col{
     display: flex;  
@@ -66,5 +67,13 @@
 }
 .weather-data .col img{
     width: 26px;
- margin-top: 10px;
+    margin-top: 10px;
+}
+.Humidity{
+    position: relative;
+    bottom: -4px;
+}
+#col2{
+    position: relative;
+    left: 14px;
 }

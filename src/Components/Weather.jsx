@@ -1,4 +1,4 @@
-import { useRef , useState} from 'react'
+import { useEffect, useRef , useState} from 'react'
 import search_icon from '../assets/Assets/search.png'
 import clear_icon from '../assets/Assets/clear.png'
 import cloud_icon from '../assets/Assets/cloud.png'
@@ -47,7 +47,7 @@ const Weather = () => {
            setWeatherData({
                 humidity : data.main.humidity,
                 windSpeed : data.wind.speed,
-                temprature : Math.floor(data.main.temp - 273.15),
+                temprature : Math.floor(data.main.temp) + "°C",
                 location : data.name,
                 icon : icon
            }) 
@@ -57,26 +57,29 @@ const Weather = () => {
          }
          searchInputRef.current.value = "";
    }
+   useEffect(() => {
+      search("Arba minch") // Default city to fetch weather data for
+   },[])
   return (
     <div className='weather'>
        <div className="search-bar">
           <input type="text" placeholder='Search for a city' className='search-input' ref={searchInputRef} />
          <img src={search_icon} alt="Search Image" onClick={() =>{
-            search(searchInputRef.current.value.tirm());
+            search(searchInputRef.current.value);
          }}/>
        </div>
         <img src={weatherData.icon} alt="" className='weather-icon'/>
        <p className='temprature'>{weatherData.temprature}</p>
         <p className='location'>{weatherData.location}</p>
         <div className="weather-data">
-           <div className="col">
-            <img src={humidity_icon} alt="Humidity Image"/>
+           <div className="col" id='col1'>
+            <img src={humidity_icon} alt="Humidity Image" className='Humidity'/>
             <div>
                 <p className='data'>{weatherData.humidity}</p>
                 <span className='data-value'>Humidity</span>
             </div>
            </div>
-           <div className="col">
+           <div className="col" id='col2'>
             <img src={wind_icon} alt="Wind Image"/>
             <div>
                 <p className='data'>{weatherData.windSpeed} Km/hr</p>
