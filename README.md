@@ -1,4 +1,4 @@
-# 🌦️ Modern React Weather App
+<h1 align="center"> 🌦️ Modern React Weather App </h1>
 
 > **A sleek, animated, icon‑rich, fully responsive weather app built with React + Plain CSS** — features smooth transitions, weather‑based animations, dark/light themes, and polished UI for all screen sizes.
 
@@ -120,3 +120,5 @@ Remember to add your env variables in the hosting dashboard.
 4. Open a Pull Request
 
 ---
+
+<p align="center">✨ Built by <a href="https://github.com/GTK-kala">Khalid</a> ✨</p>
