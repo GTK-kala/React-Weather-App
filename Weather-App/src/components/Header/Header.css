@@ -1,0 +1,22 @@
+/* ===========================
+   HEADER
+=========================== */
+.header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}

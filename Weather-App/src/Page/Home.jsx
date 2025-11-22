@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import SearchBar from "../components/SearchBar";
 import WeatherCard from "../components/WeatherCard";
 import ThemeToggle from "../components/ThemeToggle";
@@ -8,8 +8,8 @@ import WeatherAnimation from "../components/WeatherAnimation";
 const Home = () => {
   return (
     <>
-      <WeatherCard />
       <Header />
+      <WeatherCard />
       <SearchBar />
       <ThemeToggle />
       <ForeCastList />
