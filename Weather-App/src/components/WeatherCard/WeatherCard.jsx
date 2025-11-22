@@ -48,4 +48,4 @@ const WeatherCard = ({ weather }) => {
   );
 };
 
-export default WeatherCard;
+export default WeatherCard

@@ -33,4 +33,4 @@ const SearchBar = ({ onSearch, onGeoSearch }) => {
   );
 };
 
-export default SearchBar;
+export default SearchBar

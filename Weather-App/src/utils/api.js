@@ -1,11 +1,9 @@
-const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
-
 // Fetch weather by city name
 export const fetchWeatherByCity = async (city) => {
   try {
     // 1️⃣ Current weather
     const res = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`
     );
     const data = await res.json();
     if (!data.coord) return null;
@@ -14,7 +12,7 @@ export const fetchWeatherByCity = async (city) => {
 
     // 2️⃣ Forecast using One Call API
     const forecastRes = await fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=metric&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=metric&appid=${import.meta.VITE_APP_ID}`
     );
     const forecastData = await forecastRes.json();
 
@@ -37,12 +35,12 @@ export const fetchWeatherByGeo = async () => {
       const { latitude, longitude } = position.coords;
       try {
         const res = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${import.meta.VITE_APP_ID}`
         );
         const data = await res.json();
 
         const forecastRes = await fetch(
-          `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly,alerts&units=metric&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly,alerts&units=metric&appid=${import.meta.VITE_APP_ID}`
         );
         const forecastData = await forecastRes.json();
 

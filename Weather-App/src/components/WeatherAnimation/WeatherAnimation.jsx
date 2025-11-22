@@ -16,13 +16,9 @@ const WeatherAnimation = ({ weather }) => {
         </>
       )}
 
-      {condition.includes("rain") && (
-        <div className="rain"></div>
-      )}
+      {condition.includes("rain") && <div className="rain"></div>}
 
-      {condition.includes("snow") && (
-        <div className="snow"></div>
-      )}
+      {condition.includes("snow") && <div className="snow"></div>}
 
       {condition.includes("fog") || condition.includes("mist") ? (
         <div className="fog"></div>

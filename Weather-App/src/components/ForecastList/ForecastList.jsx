@@ -17,4 +17,4 @@ const ForecastList = ({ forecast }) => {
   );
 };
 
-export default ForecastList;
+export default ForecastList
