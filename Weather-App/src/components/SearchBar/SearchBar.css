@@ -1,0 +1,51 @@
+/* ===========================
+   SEARCH BAR
+=========================== */
+
+.searchbar {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: border 0.25s ease, background 0.25s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--card-bg-hover);
+}
+
+.search-btn,
+.location-btn {
+  background: var(--accent);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s ease;
+}
+
+.search-btn:hover,
+.location-btn:hover {
+  opacity: 0.8;
+}
+
+.search-btn svg,
+.location-btn svg {
+  color: #fff;
+}

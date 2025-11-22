@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/SearchBar/SearchBar";
 import WeatherCard from "../components/WeatherCard";
 import ThemeToggle from "../components/ThemeToggle";
 import ForeCastList from "../components/ForecastList";
