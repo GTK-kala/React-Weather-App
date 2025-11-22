@@ -1,4 +1,4 @@
-import ThemeToggle from "../ThemeToggle";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Header.css";
 
 const Header = () => {
