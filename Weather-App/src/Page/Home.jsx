@@ -3,7 +3,7 @@ import SearchBar from "../components/SearchBar/SearchBar";
 import WeatherCard from "../components/WeatherCard/WeatherCard";
 import ThemeToggle from "../components/ThemeToggle";
 import ForeCastList from "../components/ForecastList";
-import WeatherAnimation from "../components/WeatherAnimation";
+import WeatherAnimation from "../components/WeatherAnimation/WeatherAnimation";
 
 const Home = () => {
   return (
@@ -11,9 +11,9 @@ const Home = () => {
       <Header />
       <SearchBar />
       <WeatherCard />
+      <WeatherAnimation />
       <ThemeToggle />
       <ForeCastList />
-      <WeatherAnimation />
     </>
   );
 };

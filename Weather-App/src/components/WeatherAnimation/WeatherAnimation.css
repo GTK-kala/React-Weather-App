@@ -1,0 +1,108 @@
+.weather-animation-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.sunshine {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 220, 120, 0.4),
+    transparent 70%
+  );
+  animation: pulseGlow 6s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  filter: blur(10px);
+  animation: cloudDrift 25s linear infinite;
+}
+
+.cloud-1 {
+  top: 20%;
+  left: -200px;
+  animation-duration: 32s;
+}
+
+.cloud-2 {
+  top: 50%;
+  left: -300px;
+  animation-duration: 40s;
+}
+
+@keyframes cloudDrift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(140vw);
+  }
+}
+
+.rain {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.12) 0px,
+    rgba(255, 255, 255, 0.12) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+  animation: rainFall 0.4s linear infinite;
+}
+
+@keyframes rainFall {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 12px;
+  }
+}
+
+.fog {
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 200, 200, 0.15);
+  backdrop-filter: blur(12px);
+  animation: fogFloat 10s ease-in-out infinite;
+}
+
+@keyframes fogFloat {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
