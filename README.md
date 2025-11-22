@@ -71,26 +71,6 @@ It includes:
 
 ---
 
-## ♿ Accessibility
-
-* Visible focus outlines
-* ARIA labels on inputs/buttons
-* Keyboard-friendly search & toggle
-* Respects `prefers-reduced-motion`
-
----
-
-## 🚀 Production Build
-
-```bash
-npm run build
-```
-
-Deploy on **Vercel**, **Netlify**, or **GitHub Pages**.
-Remember to add your env variables in the hosting dashboard.
-
----
-
 ## 📝 Implementation Roadmap
 
 * [ ] UI Layout Skeleton
@@ -109,16 +89,6 @@ Remember to add your env variables in the hosting dashboard.
 * 🌙 **Home (Dark Mode)**
 * 📱 **Mobile View**
 * 🌧️ **Rain Animation Demo**
-
 ---
 
-## 🤝 Contributing
-
-1. Fork the repo
-2. Create a new branch
-3. Commit and push changes
-4. Open a Pull Request
-
----
-
-<p align="center">✨ Built by <a href="https://github.com/GTK-kala">Khalid</a> ✨</p>
+<p align="center">✨ Built by <a href="https://github.com/GTK-kala">Khalid Daniel</a> ✨</p>
