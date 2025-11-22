@@ -1,0 +1,41 @@
+/* ===========================
+   RESPONSIVE BREAKPOINTS
+=========================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .weather-card {
+    padding: 1.2rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .app {
+    padding: 0.5rem;
+  }
+
+  .weather-card {
+    padding: 1rem;
+  }
+
+  .temp {
+    font-size: 2.2rem;
+  }
+
+  .forecast-list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+  }
+}

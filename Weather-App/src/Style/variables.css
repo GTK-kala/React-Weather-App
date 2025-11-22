@@ -1,0 +1,23 @@
+/* ===========================
+   VARIABLES: LIGHT & DARK MODE
+=========================== */
+
+body.light {
+  --bg: #f5f5f5;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-bg-hover: rgba(255, 255, 255, 0.95);
+  --text-primary: #1a1a1a;
+  --text-muted: #555;
+  --accent: #1e90ff;
+  --border: rgba(0,0,0,0.1);
+}
+
+body.dark {
+  --bg: #121212;
+  --card-bg: rgba(28,28,28,0.85);
+  --card-bg-hover: rgba(35,35,35,0.95);
+  --text-primary: #eee;
+  --text-muted: #aaa;
+  --accent: #1e90ff;
+  --border: rgba(255,255,255,0.1);
+}
