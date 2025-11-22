@@ -26,15 +26,11 @@ const SearchBar = ({ onSearch, onGeoSearch }) => {
         <Search size={18} />
       </button>
 
-      <button
-        type="button"
-        className="location-btn"
-        onClick={onGeoSearch}
-      >
+      <button type="button" className="location-btn" onClick={onGeoSearch}>
         <MapPin size={18} />
       </button>
     </form>
   );
 };
 
-export default SearchBar
+export default SearchBar;
