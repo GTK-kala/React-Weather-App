@@ -38,8 +38,8 @@ const Home = () => {
       <div className="home-card">
         <Header />
         <SearchBar
-          onSearch={() => fetchWeatherByCity()}
-          onGeoSearch={() => handleGeoSearch()}
+          onSearch={handleSearch}
+          onGeoSearch={handleGeoSearch}
         />
         <WeatherCard weather={weather} />
         <ForeCastList forecast={forecast} />
