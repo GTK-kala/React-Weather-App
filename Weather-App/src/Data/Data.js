@@ -1,0 +1,135 @@
+export const DemoData = [
+  {
+    coord: {
+      lon: 38.7469,
+      lat: 9.025,
+    },
+    weather: [
+      {
+        id: 803,
+        main: "Clouds",
+        description: "broken clouds",
+        icon: "04n",
+      },
+    ],
+    base: "stations",
+    main: {
+      temp: 287.71,
+      feels_like: 287.28,
+      temp_min: 287.71,
+      temp_max: 287.71,
+      pressure: 1017,
+      humidity: 79,
+      sea_level: 1017,
+      grnd_level: 770,
+    },
+    visibility: 10000,
+    wind: {
+      speed: 1.5,
+      deg: 150,
+      gust: 1.8,
+    },
+    clouds: {
+      all: 71,
+    },
+    dt: 1766170736,
+    sys: {
+      country: "ET",
+      sunrise: 1766115252,
+      sunset: 1766156999,
+    },
+    timezone: 10800,
+    id: 344979,
+    name: "Addis Ababa",
+    cod: 200,
+  },
+  {
+    coord: {
+      lon: 37.55,
+      lat: 6.0333,
+    },
+    weather: [
+      {
+        id: 804,
+        main: "Clouds",
+        description: "overcast clouds",
+        icon: "04n",
+      },
+    ],
+    base: "stations",
+    main: {
+      temp: 295.27,
+      feels_like: 295.21,
+      temp_min: 295.27,
+      temp_max: 295.27,
+      pressure: 1014,
+      humidity: 64,
+      sea_level: 1014,
+      grnd_level: 877,
+    },
+    visibility: 10000,
+    wind: {
+      speed: 1.84,
+      deg: 322,
+      gust: 2.7,
+    },
+    clouds: {
+      all: 100,
+    },
+    dt: 1766171230,
+    sys: {
+      country: "ET",
+      sunrise: 1766115224,
+      sunset: 1766157602,
+    },
+    timezone: 10800,
+    id: 343663,
+    name: "Arba Minch",
+    cod: 200,
+  },
+  {
+    coord: {
+      lon: 139.6917,
+      lat: 35.6895,
+    },
+    weather: [
+      {
+        id: 801,
+        main: "Clouds",
+        description: "few clouds",
+        icon: "02n",
+      },
+    ],
+    base: "stations",
+    main: {
+      temp: 280.27,
+      feels_like: 279.47,
+      temp_min: 279.61,
+      temp_max: 280.94,
+      pressure: 1027,
+      humidity: 60,
+      sea_level: 1027,
+      grnd_level: 1025,
+    },
+    visibility: 10000,
+    wind: {
+      speed: 1.54,
+      deg: 310,
+    },
+    clouds: {
+      all: 20,
+    },
+    dt: 1766171052,
+    sys: {
+      type: 2,
+      id: 268395,
+      country: "JP",
+      sunrise: 1766180791,
+      sunset: 1766215848,
+    },
+    timezone: 32400,
+    id: 1850144,
+    name: "Tokyo",
+    cod: 200,
+  },
+];

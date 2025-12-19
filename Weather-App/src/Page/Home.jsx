@@ -5,11 +5,11 @@ import WeatherCard from "../components/WeatherCard/WeatherCard";
 import ForeCastList from "../components/ForecastList/ForecastList";
 import { fetchWeatherByCity, fetchWeatherByGeo } from "../utils/api.js";
 import WeatherAnimation from "../components/WeatherAnimation/WeatherAnimation";
+import { DemoData } from "../Data/Data.js";
 import "./Home.css";
 
 const Home = () => {
-  
-  const [weather, setWeather] = useState(null);
+  const [weather, setWeather] = useState(DemoData[0]);
   const [forecast, setForecast] = useState([]);
 
   const handleSearch = async (city) => {
@@ -30,6 +30,7 @@ const Home = () => {
 
   useEffect(() => {
     // Load default city on mount
+    setWeather(DemoData[2]);
     handleSearch("Addis Ababa");
   }, []);
   return (
@@ -37,10 +38,7 @@ const Home = () => {
       <WeatherAnimation weather={weather} />
       <div className="home-card">
         <Header />
-        <SearchBar
-          onSearch={handleSearch}
-          onGeoSearch={handleGeoSearch}
-        />
+        <SearchBar onSearch={handleSearch} onGeoSearch={handleGeoSearch} />
         <WeatherCard weather={weather} />
         <ForeCastList forecast={forecast} />
       </div>

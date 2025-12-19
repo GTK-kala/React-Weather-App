@@ -1,5 +1,6 @@
-
 // Fetch weather by city name
+import { DemoData } from "../Data/Data.js";
+
 export const fetchWeatherByCity = async (city) => {
   const API_KEY = "66464269d850578ab34c3c8d1178ac4c";
   try {
@@ -19,7 +20,7 @@ export const fetchWeatherByCity = async (city) => {
     const forecastData = await forecastRes.json();
 
     return {
-      current: data,                  // for WeatherCard
+      current: data, // for WeatherCard
       forecast: forecastData.daily.slice(0, 5), // for ForecastList
     };
   } catch (error) {
